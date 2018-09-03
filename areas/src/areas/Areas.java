@@ -6,7 +6,6 @@
 package areas;
 import java.util.Scanner;
 import areas.circulo;
-import areas.calcularArea;
 /**
  *
  * @author Estudiantes
@@ -23,18 +22,32 @@ public class Areas {
         opcion = sc.nextInt();
         switch (opcion){
             case 1:
-                circulo Circulo = new circulo();
+                System.out.println("Ingrese el radio del circulo");
+                double radio,pi1;
+                pi1 = 3.1416;
+                radio = sc.nextDouble();
+                circulo Circulo = new circulo(radio,pi1);
+                System.out.println(circulo.formulaArea(radio, pi1));
                 break;
             case 2:
-                
+                System.out.println("Ingrese el valor de la base");
+                double base, altura;
+                base = sc.nextDouble();
+                System.out.println("Altura");
+                altura = sc.nextDouble();
+                cuadroRectangulo cuadro = new cuadroRectangulo(base, altura);
+                System.out.println(cuadroRectangulo.formulaArea(base, altura));
                 break;
             case 3:
-                
+                System.out.println("Ingrese la altura");
+                double alturat, baset;
+                alturat = sc.nextDouble();
+                System.out.println("Ingrese la base");
+                baset = sc.nextDouble();
+                triangulo Triangulo = new triangulo(alturat,baset);
+                System.out.println(triangulo.formulaArea(alturat,baset));
                 break;
         }
-    }
-
-    public Areas() {
     }
     
 }

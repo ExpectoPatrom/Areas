@@ -9,20 +9,16 @@ package areas;
  *
  * @author Estudiantes
  */
-public class circulo extends calcularArea{
-    
-    final double PI = 3.1416;
-    
-    public circulo(double medida1) {
-        super(medida1);
+public class circulo extends Areas{
+    double medida1;
+    double PI;
+    public circulo(double radio, double pi1){
+         medida1 = radio;
+         PI = pi1;
     }
+    
     public static double formulaArea(double medida1, double PI){
         return PI*(medida1*medida1);
     }
-
-    circulo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
 
 }

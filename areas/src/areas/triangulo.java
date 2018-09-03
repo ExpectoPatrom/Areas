@@ -9,14 +9,18 @@ package areas;
  *
  * @author Estudiantes
  */
-public class triangulo extends calcularArea{
+public class triangulo extends Areas{
   
-    int medida2;
-    public triangulo(double medida1) {
-        super(medida1);
-    }
-    public static double formulaArea(double medida1,double medida2){
+    double  medida2;
+    double medida1;
+    
+     public static double formulaArea(double medida1,double medida2){
        return (medida1*medida2)/2;
+    }
+
+    public triangulo(double medida2, double medida1) {
+        this.medida2 = medida2;
+        this.medida1 = medida1;
     }
    
 }

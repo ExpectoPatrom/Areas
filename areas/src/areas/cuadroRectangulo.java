@@ -9,13 +9,13 @@ package areas;
  *
  * @author Estudiantes
  */
-public class cuadroRectangulo extends calcularArea{
-
+public class cuadroRectangulo extends Areas{
+    double medida1;
     double medida2;
-    public cuadroRectangulo(double medida1) {
-        super(medida1);
+    cuadroRectangulo(double base, double altura){
+        medida1 = base;
+        medida2 = altura;
     }
-    
     public static double formulaArea(double medida1, double medida2){
         return medida1*medida2;
     }
